@@ -9,6 +9,8 @@ export default {
       colors:{
         'nav':'#363A45',
         'bg-nav':'#F7F7F7',
+        'nayti':'#DADCDC',
+        'yashil':'#00C65E',
       }
     },
   },
