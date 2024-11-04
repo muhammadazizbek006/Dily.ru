@@ -8,6 +8,7 @@ export default {
     extend: {
       colors:{
         'nav':'#363A45',
+        'bg-nav':'#F7F7F7',
       }
     },
   },
