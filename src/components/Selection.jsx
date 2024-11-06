@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Products } from '../Data'
 // imgs 
 import like1 from '../assets/like1.svg'
 const Selection = () => {
+    const  [SelectionProducts, setSelectionProducts] = useState([]);
+
+    const addProducts = ()=>{
+        
+    }
   return (
     <section>
         <div className="containerb">
@@ -11,12 +16,12 @@ const Selection = () => {
                 {
                     Products.map((e)=>{
                         return(
-                            <li className='relative flex flex-col justify-between h-full pt-2 w-[214px]  bg-white rounded-md'>
+                            <li key={e.id} className='relative flex flex-col justify-between h-full pt-2 w-[214px]  bg-white rounded-md'>
                                 <button  className='absolute right-3 top-2'>
                                     <img src={like1} alt="like" />
                                 </button>
                                 <div className='flex flex-col items-center'>
-                                    <img className='' src={e.img} alt="" />
+                                    <img className='' src={e.img} alt={e.title} />
                                 </div>
                                 <div className='pl-4'>
                                     <h3 className='text-base mb-1  text-nav'>{e.title}</h3>
