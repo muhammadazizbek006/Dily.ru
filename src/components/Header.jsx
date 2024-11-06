@@ -38,11 +38,11 @@ const Header = () => {
           {/* location */}
           <div className='flex items-center mr-7 '>
             <img className='mr-2.5' src={location} alt="location" />
-            <select className='w-[90px]' name="" id="">
+            <select className='w-[90px] bg-transparent' name="" id="">
               {
                 locations.map((e)=>{
                   return(
-                    <option className='text-sm font-normal text-nav' value="">{e.location}</option>
+                    <option key={e.id} className='text-sm font-normal text-nav' value={e.location}>{e.location}</option>
                   )
                 })
               }
